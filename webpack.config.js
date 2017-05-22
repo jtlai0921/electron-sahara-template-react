@@ -1,34 +1,40 @@
+var path = require('path');
 var webpack = require('webpack');
-
+console.log(path.resolve(__dirname, 'app/www/build'));
 module.exports = {
   entry: {
-    app: ['webpack/hot/dev-server', './javascripts/entry.js']
-  },
+    app: [
+      './src/index.js'
+  ]},
 
   output: {
-    path: './public/built',
+    path: path.resolve(__dirname, 'app/www/build'),
+    publicPath: "/assets/",
     filename: 'bundle.js',
-    publicPath: 'http://localhost:8080/built/'
   },
 
   devServer: {
-    contentBase: './public',
-    publicPath: 'http://localhost:8080/built/'
+    publicPath: [
+      path.join(__dirname, "app/www/static"),
+      path.join(__dirname, "assets")
+    ],
+    publicPath: "/assets/",
+    filename: 'bundle.js',
   },
 
   module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        query: {
-          presets: ['react', 'es2015']
-        }
-      },
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.less$/, loader: 'style-loader!css-loader!less-loader'}
-    ]
+    loaders: [{
+      test: /\.jsx?$/,
+      loader: 'babel-loader',
+      exclude: /node_modules/,
+      query: {
+        presets: ['react', 'es2015']
+      }
+    }, {
+      test: /\.css$/, loader: 'style-loader!css-loader'
+    }, { 
+      test: /\.less$/, loader: 'style-loader!css-loader!less-loader'
+    }]
   },
 
   plugins: [

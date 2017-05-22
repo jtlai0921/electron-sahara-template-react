@@ -1,4 +1,4 @@
-require('../less/main.less');
+require('./styles/index.less');
 
 'use strict';
 
@@ -9,7 +9,7 @@ var Entry = React.createClass({
   render: function(){
     return (
       <div className="myDiv">
-        Hello Electron!
+        Hello Electron !
       </div>
     )
   }
