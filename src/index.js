@@ -8,11 +8,12 @@ var ReactDOM = require('react-dom');
 var Entry = React.createClass({
   render: function(){
     return (
-      <div className="myDiv">
-        Hello Electron !
+      <div id="app">
+        <h1>Electron React Starter Kit</h1>
+        <div id="data">Sending message to Electron...</div>
       </div>
     )
   }
 });
 
-ReactDOM.render(<Entry />, document.getElementById('content'));
+ReactDOM.render(<Entry />, window.document.body);

@@ -22,7 +22,7 @@ var createWindow = (function () {
       });
 
       // and load the index.html of the app.
-      browserWindow.loadURL(`file://${__dirname}/www/index.html`)
+      // browserWindow.loadURL(`file://${__dirname}/www/index.html`)
 
       browserWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'www/index.html'),

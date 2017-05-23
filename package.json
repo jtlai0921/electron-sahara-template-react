@@ -1,6 +1,6 @@
 {
   "name": "@virtuoworks/electron-sahara-template-react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Electron Sahara react.js project template",
   "main": "./app/app.js",
   "scripts": {

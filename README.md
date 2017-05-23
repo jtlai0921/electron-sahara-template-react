@@ -9,10 +9,13 @@ Template for Electron Sahara.
 ## Instructions
 
 ```bash
+# install dependencies
 npm install
-npm run-script watch
 
-# open a new terminal
+# starts webpack
+npm run watch
+
+# starts electron app
 npm start
 ```
 
