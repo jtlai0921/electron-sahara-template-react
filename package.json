@@ -3,10 +3,12 @@
   "version": "0.0.7",
   "description": "Electron Sahara react.js project template",
   "main": "./app/app.js",
+  "engines": {
+    "node": ">=4.7.0"
+  },
   "scripts": {
-    "start": "electron ./app",
+    "start": "electron ./app/app.js",
     "watch": "webpack --progress --colors --watch",
-    "server": "webpack-dev-server",
     "test": "nyc --reporter=html --reporter=text mocha tests"
   },
   "repository": {
@@ -55,7 +57,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "style-loader": "^0.13.0",
-     "webpack": "^1.15.0",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.1"
   }
 }
