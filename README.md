@@ -29,6 +29,6 @@ npm start
 [downloads-image]: https://img.shields.io/npm/dm/@virtuoworks/electron-sahara-template-react.svg
 [downloads-url]: https://www.npmjs.com/package/@virtuoworks/electron-sahara-template-react
 [travis-image]: https://api.travis-ci.org/VirtuoWorks/electron-sahara-template-react.svg?branch=master
-[travis-url]: https://travis-ci.org/VirtuoWorks/electron-sahara-template-react.svg
+[travis-url]: https://travis-ci.org/VirtuoWorks/electron-sahara-template-react
 [dependencyci-image]: https://dependencyci.com/github/VirtuoWorks/electron-sahara-template-react/badge
 [dependencyci-url]: https://dependencyci.com/github/VirtuoWorks/electron-sahara-template-react
