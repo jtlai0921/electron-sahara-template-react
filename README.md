@@ -1,10 +1,11 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build Status][travis-image]][travis-url]
+[![Dependency Status][dependencyci-image]][dependencyci-url]
 
-# Electron Sahara React Template 
+# Electron Sahara React Template
 
-Template for Electron Sahara.
+Template for **[Electron Sahara](https://github.com/VirtuoWorks/electron-sahara)**.
 
 ## Instructions
 
@@ -29,3 +30,5 @@ npm start
 [downloads-url]: https://www.npmjs.com/package/@virtuoworks/electron-sahara-template-react
 [travis-image]: https://api.travis-ci.org/VirtuoWorks/electron-sahara-template-react.svg?branch=master
 [travis-url]: https://travis-ci.org/VirtuoWorks/electron-sahara-template-react.svg
+[dependencyci-image]: https://dependencyci.com/github/VirtuoWorks/electron-sahara-template-react/badge
+[dependencyci-url]: https://dependencyci.com/github/VirtuoWorks/electron-sahara-template-react
